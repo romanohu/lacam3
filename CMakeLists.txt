@@ -8,6 +8,10 @@ add_executable(main main.cpp)
 target_compile_features(main PUBLIC cxx_std_17)
 target_link_libraries(main lacam3 argparse)
 
+add_executable(main_graph main_graph.cpp)
+target_compile_features(main_graph PUBLIC cxx_std_17)
+target_link_libraries(main_graph lacam3 argparse)
+
 # test
 enable_testing()
 file(GLOB TEST_FILES "./tests/test_*.cpp")
